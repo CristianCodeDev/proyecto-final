@@ -205,4 +205,46 @@ h6 {
   -moz-box-shadow: 4px -3px 90px -9px rgba(0, 0, 0, 0.64);
 }
 
+.liitem .a {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.liitem .a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.3rem;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.liitem .a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0.3rem;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.liitem:hover .a::before {
+  width: 50%;
+  transform: translate(100%);
+}
+
+.liitem:hover .a::after {
+  width: 50%;
+  transform: translate(-100%);
+}
+
+.a:hover {
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=styles.css.map */
