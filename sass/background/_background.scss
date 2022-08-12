@@ -1,3 +1,8 @@
 .background {
     background-image: $background; 
   }
+  .background--footer {
+    @extend .background;
+    background-image: none;
+    background-color: $black;
+  }
