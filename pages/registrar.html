@@ -15,67 +15,70 @@
 </head>
 <body>
   <!-------------------------------HEADER------------------------------------------------------------------------------------------------->
-  <header>
-    <nav class="fondo1 navbar navbar-expand-lg background p-5">
-      <div class="container-fluid m-2">
-        <img src="../img/logo/logotipo.png" alt="logotipo-logotype" class="logotipo">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAE9JREFUSEtjZKAxYKSx+QyjFhAMYfoH0X8gIOgsPAoYgQBZGsMHNLeAEtdj00v/OKC5D2geBzS3gOZBNPQtoHkc0NyCoR8Hoz5ADwGal6YAa1QYGVDloAYAAAAASUVORK5CYII="/></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse m-2" id="navbarSupportedContent">
+  <header class="fondo1 navbar navbar-expand-lg background">
+    <div class="container-fluid m-2">
+      <img src="../img/logo/logotipo.png" alt="logotipo" class="logotipo">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAE9JREFUSEtjZKAxYKSx+QyjFhAMYfoH0X8gIOgsPAoYgQBZGsMHNLeAEtdj00v/OKC5D2geBzS3gOZBNPQtoHkc0NyCoR8Hoz5ADwGal6YAa1QYGVDloAYAAAAASUVORK5CYII="/></span>
+      </button>
+    </div>
+    <div class="container-fluid">
+      <nav class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="col d-flex justify-content-center align-items-center navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item m-3">
-            <a class="nav-link texto " href="../index.html">Inicio</a>
+          <li class="nav-item m-3 d-flex justify-content-center align-items-center flex-row">
+            <a href="../index.html">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQ5JREFUSEvtld0NgjAQgHsJISlPruAE4gTKJMok6iSyCboBTuAKPEFCSM4rUuSntQXCk/axXL/v7nIXgC18YGE+sxYg4orleVwlxHkAAKlNclaCBg7gV1DExFZiJ8jziLCHXsYRcB6aqjAKUA2XXKPkq4DgZyKdDFleqBIRpzxaAcGP9OJqakH9PSSJaOPgKAUj4RKqlAwEWBQ+K8uYAawss3+HIabMcQJw3aT9riOYDJdEhaQR1LP+HJ15v0wh4XwtF/EjyLKE4JtRbdEF0yKC523F56UEDxJUW6+bIpxSCY3qgPdDgn75tIyDNs5q0V/QmUrq740udq3LO7Vo3w6yidHuwZQd0L0x/tHmyl7FV4wZ6zpwMQAAAABJRU5ErkJggg=="/ class="m-1">
+            </a>
+            <a class="nav-link texto a" href="../index.html">Inicio</a>
           </li>
-          <li class="nav-item m-3">
-            <a class="nav-link texto" href="../pages/registro.html">Volver>></a>
+          <li class="nav-item m-3 d-flex justify-content-center align-items-center flex-row">
+            <a class="nav-link texto a" href="../pages/registro.html"> Volver>> </a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>   
   </header>
   <!------------------------------------------------------MAIN--------------------------------------------------------------->
   <main>
     <div>
-        <section class="container p-5">
+        <section class="container-fluid">
             <div class="row">
                 <div class="d-flex flex-xl-row flex-sm-column justify-content-center align-items-center mediacolumn">
                     <div>
-                        <article class="d-flex justify-content-center align-items-center m-4">
-                            <h1 class="m-2">Crear una cuenta</h1>
+                        <article class="d-flex justify-content-center align-items-center mt-4 mb-4">
+                            <h1 class="mt-2 mb-2">Crear una cuenta</h1>
                         </article>
                         <form>
-                            <div class="mb-3">
+                            <div class="mb-3 mt-3">
                                 <label for="email-input1" class="form-label">Correo electrónico</label>
                                 <input type="email" class="form-control" id="email-input1" aria-describedby="emailHelp">
                                 <p id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</p>
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-3 mt-3">
                                 <label for="password-input1" class="form-label">Contraseña</label>
                                 <input type="password" class="form-control" id="password-input1">
                             </div>
-                              <div class="mb-3 form-check">
+                              <div class="mb-3 mt-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="checkbox-input1">
                                 <label class="form-check-label" for="checkbox-input1">Recordar</label>
                               </div>
                                 <button type="submit" class="btn botonescolorPagina texto text-center">Crear Cuenta</button>
-                            <div class="d-flex justify-content-center align-items-center m-2">
+                            <div class="d-flex justify-content-center align-items-center mt-2 mb-2">
                                 <div>
-                                    <p class="m-2">¿Ya estás registrado? <a href="../pages/iniciar.html" class="text-decoration-none texto2">Inicia sesión</a></p>
+                                    <p class="mt-2 mb-2">¿Ya estás registrado? <a href="../pages/iniciar.html" class="text-decoration-none texto2">Inicia sesión</a></p>
                                 </div>
                               </div>
                         </form> 
                     </div>
                     <div>
-                        <section class="d-flex justify-content-center align-items-center m-5">
+                        <div class="d-flex justify-content-center align-items-center m-5">
                             <article class="card">
                                 <img src="../img/registro/registrar.png" class="card-img-top" alt="ilustracion de criptomonedas">
                                 <div class="card-body">
                                 <h2 class="card-text text-center">Compra criptomonedas en unos minutos</h2>
                                 <p class="text-center">Disfruta del exchange de criptomonedas más grande del mundo, al alcance de tu mano.</p>
                               </article>
-                        </section>
+                        </div>
                       </div>
                   </div>
               </div> 
